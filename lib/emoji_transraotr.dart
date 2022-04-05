@@ -1,7 +1,12 @@
 library emoji_transraotr;
 
-/// A Calculator.
-class Calculator {
-  /// Returns [value] plus 1.
-  int addOne(int value) => value + 1;
+class UnicodeToEmoji {
+  static String toEmoji(String unicodeStr) {
+    if (unicodeStr.substring(0, 2) != 'U+') {
+      throw Exception('Unicodeが検出できません: `U+` で始まる必要があります');
+    }
+
+    final unicode = '0x${unicodeStr.substring(2, unicodeStr.length)}';
+    return String.fromCharCode(int.parse(unicode));
+  }
 }
