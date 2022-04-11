@@ -1,6 +1,6 @@
 import 'package:flutter_test/flutter_test.dart';
 
-import 'package:unicode_to_emoji/unicode_to_emoji.dart';
+import 'package:unicode_to_emoji/src/unicode_convertor.dart';
 
 void main() {
   test('adds one to input values', () {
