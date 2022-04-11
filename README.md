@@ -1,39 +1,31 @@
-<!-- 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+   # Unicode to Emoji
+Unicode converter to emoji object
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
+[![pub package](https://img.shields.io/pub/v/flutter_balloon_slider.svg)](https://pub.dartlang.org/packages/flutter_balloon_slider)
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
+## Installation
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+Add dependency in `pubspec.yaml`:
+```yaml
+dependencies:
+  unicode_to_emoji: "^0.1.0"
+```
 
-## Features
-
-TODO: List what your package can do. Maybe include images, gifs, or videos.
-
-## Getting started
-
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Import in your project:
+```dart
+import 'package:unicode_to_emoji/unicode_to_emoji.dart';
+```
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+final emoji = UnicodeToEmoji.toEmoji('U+1F600');
+print(emoji); // 😀
+
 ```
 
-## Additional information
+## Changelog
+Check [Changelog](https://github.com/faob-dev/flutter_balloon_slider/blob/master/CHANGELOG.md) for updates
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+## Bugs/Requests
+Reporting issues and requests for new features are always welcome.
